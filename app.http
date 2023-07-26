@@ -1,0 +1,31 @@
+POST http://localhost:4500/project
+Content-Type: application/json
+
+{
+    "project_name": "Build Stadium",
+    "project_description":"Build a stadium capable of holding 40000 people",
+    "project_location":"Nyeri",
+    "startdate":"24/7/2023",
+    "enddate":"24/7/2025"
+}
+
+###
+GET http://localhost:4500/project
+
+###
+GET http://localhost:4500/project/3ceaa0ec-4c3f-4dc6-8a16-7c87f2385676
+
+### UPDATING PROJECT
+PUT http://localhost:4500/project/c72b968a-2de5-40ca-8ae5-cb63b57ab048
+Content-Type: application/json
+
+{
+    "project_name": "Build A bridge",
+    "description":"Build the nithi bridge",
+    "project_location":"Tharaka Nithi",
+    "startdate":"07/7/2024",
+    "enddate":"07/8/2025"
+}
+
+###
+DELETE http://localhost:4500/project/63b7ebfb-1968-46b4-9c66-640bedb8256d
